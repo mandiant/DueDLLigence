@@ -21,3 +21,7 @@ Export: powershell
 ## Msiexec
 Export: DllUnregisterServer
 <br>```msiexec /z {full path to msiexec.dll}```
+<br>
+<br>
+<br>
+Credit for the DueDLLigence name goes to Paul Sanders (@saul_panders)

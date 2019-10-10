@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 /* Copyright (C) 2019 FireEye, Inc. All Rights Reserved.
  * 
- * Last Updated: 2019-03-22
+ * Last Updated: 2019-10-10
  * Author: Evan Pena
  * Contributors: Casey Erikson
  * Original research/Inspired by: Casey Smith. 
