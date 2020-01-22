@@ -1,6 +1,6 @@
 # DueDLLigence
 
-Shellcode runner for all application whitelisting bypasses. The shellcode included in this project spawns calc.exe.
+Shellcode runner framework for application whitelisting bypasses and DLL side-loading. The shellcode included in this project spawns calc.exe.
 
 
 If desired, change the injection type by modifying the following line to the appropriate injection type
@@ -8,20 +8,33 @@ If desired, change the injection type by modifying the following line to the app
 
 Running the DLL with the following legitimate exes 
 
-## Control.exe
+## Application Whitelisting Bypasses. Lolbins
+
+### Control.exe
 Export: CPlApplet
 Syntax: Rename compiled “dll” extension to “cpl” and just double click it!
 <br>```Control.exe [cplfile]```
 <br>```Rundll32.exe Shell32.dll, Control_RunDLL [cplfile]```
 
-## Rasautou
+### Rasautou
 Export: powershell
 <br>```rasautou –d {dllpayload} –p powershell –a a –e e```
 
-## Msiexec
+### Msiexec
 Export: DllUnregisterServer
 <br>```msiexec /z {full path to msiexec.dll}```
-<br>
-<br>
-<br>
+
+## DLL Side-Loading Binaries and Details
+Tortoise SVN (SubWCRev.exe)
+<br> DLL == "crshhndl.dll"; Arch == x64; OS == Win7 & 10;
+<br> Exports: InitCrashHandler,SendReport,IsReadyToExit,SetCustomInfo,AddUserInfoToReport,RemoveUserInfoFromReport,AddFileToReport,RemoveFileFromReport,GetVersionFromApp,GetVersionFromFile
+
+Dism Image Servicing Utility (Dism.exe)
+<br> DLL == "DismCore.dll"; Arch == x64; OS == Win7 & 10;
+<br> Export: DllGetClassObject
+
+PotPlayerMini
+<br> DLL == "PotPlayer.dll"; Arch == x86;
+<br> Exports: PreprocessCmdLineExW,UninitPotPlayer,CreatePotPlayerExW,DestroyPotPlayer,SetPotPlayRegKeyW,RunPotPlayer
+
 Credit for the DueDLLigence name goes to Paul Sanders (@saul_panders)
