@@ -27,14 +27,14 @@ Export: DllUnregisterServer
 ## DLL Side-Loading Binaries and Details
 ### Tortoise SVN (SubWCRev.exe)
 DLL == "crshhndl.dll"; Arch == x64; OS == Win7 & 10;
-Exports: InitCrashHandler,SendReport,IsReadyToExit,SetCustomInfo,AddUserInfoToReport,RemoveUserInfoFromReport,AddFileToReport,RemoveFileFromReport,GetVersionFromApp,GetVersionFromFile
+<br>Exports: InitCrashHandler,SendReport,IsReadyToExit,SetCustomInfo,AddUserInfoToReport,RemoveUserInfoFromReport,AddFileToReport,RemoveFileFromReport,GetVersionFromApp,GetVersionFromFile
 
 ### Dism Image Servicing Utility (Dism.exe)
 DLL == "DismCore.dll"; Arch == x64; OS == Win7 & 10;
-Export: DllGetClassObject
+<br>Export: DllGetClassObject
 
 ### PotPlayerMini
 DLL == "PotPlayer.dll"; Arch == x86;
-Exports: PreprocessCmdLineExW,UninitPotPlayer,CreatePotPlayerExW,DestroyPotPlayer,SetPotPlayRegKeyW,RunPotPlayer
+<br>Exports: PreprocessCmdLineExW,UninitPotPlayer,CreatePotPlayerExW,DestroyPotPlayer,SetPotPlayRegKeyW,RunPotPlayer
 
 Credit for the DueDLLigence name goes to Paul Sanders (@saul_panders)
