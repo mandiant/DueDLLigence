@@ -25,15 +25,15 @@ Export: DllUnregisterServer
 <br>```msiexec /z {full path to msiexec.dll}```
 
 ## DLL Side-Loading Binaries and Details
-Tortoise SVN (SubWCRev.exe)
+### Tortoise SVN (SubWCRev.exe)
 <br> DLL == "crshhndl.dll"; Arch == x64; OS == Win7 & 10;
 <br> Exports: InitCrashHandler,SendReport,IsReadyToExit,SetCustomInfo,AddUserInfoToReport,RemoveUserInfoFromReport,AddFileToReport,RemoveFileFromReport,GetVersionFromApp,GetVersionFromFile
 
-Dism Image Servicing Utility (Dism.exe)
+### Dism Image Servicing Utility (Dism.exe)
 <br> DLL == "DismCore.dll"; Arch == x64; OS == Win7 & 10;
 <br> Export: DllGetClassObject
 
-PotPlayerMini
+### PotPlayerMini
 <br> DLL == "PotPlayer.dll"; Arch == x86;
 <br> Exports: PreprocessCmdLineExW,UninitPotPlayer,CreatePotPlayerExW,DestroyPotPlayer,SetPotPlayRegKeyW,RunPotPlayer
 
