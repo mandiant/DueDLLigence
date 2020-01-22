@@ -2,6 +2,7 @@
 
 Shellcode runner framework for application whitelisting bypasses and DLL side-loading. The shellcode included in this project spawns calc.exe.
 
+Authors: Evan Pena (@evan_pena2003), Ruben Boonen (@FuzzySec), Casey Erikson (@EriksocSecurity), Brett Hawkins (@h4wkst3r)
 
 If desired, change the injection type by modifying the following line to the appropriate injection type
 <br>```public const ExecutionMethod method = ExecutionMethod.CreateThread;```
