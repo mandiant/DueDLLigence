@@ -27,15 +27,24 @@ Export: DllUnregisterServer
 
 ## DLL Side-Loading Binaries and Details
 ### Tortoise SVN (SubWCRev.exe)
-DLL == "crshhndl.dll"; Arch == x64; OS == Win7 & 10;
+Executable: SubWCRev.exe
+<br>File Path: C:\Program Files\Tortoise SVN\bin
+<br>MD5 Hash: c422a95929dd627b4c2be52226287003
+<br>DLL == "crshhndl.dll"; Arch == x64; OS == Win7 & 10;
 <br>Exports: InitCrashHandler,SendReport,IsReadyToExit,SetCustomInfo,AddUserInfoToReport,RemoveUserInfoFromReport,AddFileToReport,RemoveFileFromReport,GetVersionFromApp,GetVersionFromFile
 
 ### Dism Image Servicing Utility (Dism.exe)
-DLL == "DismCore.dll"; Arch == x64; OS == Win7 & 10;
+Executable: Dism.exe
+<br>File Path: C:\Windows\System32
+<br>MD5 Hash: 5e70ab0bf74bba785b83da53a3056a21
+<br>DLL == "DismCore.dll"; Arch == x64; OS == Win7 & 10;
 <br>Export: DllGetClassObject
 
 ### PotPlayerMini
-DLL == "PotPlayer.dll"; Arch == x86;
+Executable: PotPlayer.exe
+<br>File Path: {Installation Directory}
+<br>MD5 Hash: f16903b2ff82689404f7d0820f461e5d
+<br>DLL == "PotPlayer.dll"; Arch == x86;
 <br>Exports: PreprocessCmdLineExW,UninitPotPlayer,CreatePotPlayerExW,DestroyPotPlayer,SetPotPlayRegKeyW,RunPotPlayer
 
 Credit for the DueDLLigence name goes to Paul Sanders (@saul_panders)
