@@ -7,6 +7,10 @@ Authors: Evan Pena (@evan_pena2003), Ruben Boonen (@FuzzySec), Casey Erikson (@E
 If desired, change the injection type by modifying the following line to the appropriate injection type
 <br>```public const ExecutionMethod method = ExecutionMethod.CreateThread;```
 
+Blog Post References:
+<br>https://www.fireeye.com/blog/threat-research/2019/10/staying-hidden-on-the-endpoint-evading-detection-with-shellcode.html
+<br>https://www.fireeye.com/blog/threat-research/2020/01/abusing-dll-misconfigurations.html
+
 Running the DLL with the following legitimate exes 
 
 ## Application Whitelisting Bypasses. Lolbins
